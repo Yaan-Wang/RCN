@@ -1,2 +1,2 @@
-# Relevance-aware and Cross-reasoning Network for Anomaly Segmentation of Pavement Defects
+# Normal-knowledge-based Pavement Defect Segmentation Using Relevance-aware and Cross-reasoning Mechanisms
 The code will be public soon.
