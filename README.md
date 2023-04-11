@@ -1,7 +1,7 @@
 # Normal-Knowledge-Based Pavement Defect Segmentation Using Relevance-Aware and Cross-Reasoning Mechanism
 
 # Main results
-The main experimental results are provided in [BaiduYun Drive](https://pan.baidu.com/s/1n0g67GufGnP5RQ6W_Lsb9g) (code: 6686)
+The main experimental results are provided in [BaiduYun Drive]( https://pan.baidu.com/s/1GSKR_rz22H6PFBNJgKQPBg) (code: 6686)
   
 # Training
 1. Download the pre-trained model Swin-T [BaiduYun Drive](https://pan.baidu.com/s/1cIX3ruaQqEG6jgb9yCWDqg) (code: 6686)
