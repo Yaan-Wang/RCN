@@ -787,11 +787,6 @@ class AnoSegDFR():
         # save results
         df_metrics.to_csv(os.path.join(self.eval_path, 'thred_fpr_pro_iou.csv'), sep=',', index=False)
 
-
-        # best per image iou
-        best_miou = ious_mean.max()
-        print(f"Best IOU: {best_miou:.4f}")
-
         # default 30% fpr vs pro, pro_auc
         idx = fprs <= expect_fpr    # find the indexs of fprs that is less than expect_fpr (default 0.3)
         fprs_selected = fprs[idx]
@@ -808,8 +803,8 @@ class AnoSegDFR():
 
         # save auc, pro as 30 fpr
         with open(os.path.join(self.eval_path, 'pr_auc_pro_iou_{}.csv'.format(expect_fpr)), mode='w') as f:
-                f.write("det_pr, det_auc, seg_pr, seg_auc, seg_pro, seg_iou\n")
-                f.write(f"{det_pr_score:.5f},{det_auc_score:.5f},{seg_pr_score:.5f},{seg_auc_score:.5f},{pro_auc_score:.5f},{best_miou:.5f}")
+                f.write("det_pr, det_auc, seg_pr, seg_auc, seg_pro\n")
+                f.write(f"{det_pr_score:.5f},{det_auc_score:.5f},{seg_pr_score:.5f},{seg_auc_score:.5f},{pro_auc_score:.5f}")
 
 
     def metrics_detecion(self, expect_fpr=0.3, max_step=5000):
